@@ -1,0 +1,345 @@
+/* main styles go here */
+$color_lightblue: #00b3dc;
+$color_pukegreen: #a0b33d;
+$color_purple: #bc399d;
+$color_primary: #8b8d91;
+$color_orange: #d28139;
+$font-stack: "ff-din-web-pro",sans-serif;
+$s0: 16px;
+$s1: 20px;
+$s2: 25px;
+$s3m: 40px;
+$s3: 65px;
+
+body {
+	background: white;
+	font-family: $font-stack;
+	font-size:16px;
+	color: $color_primary;
+}
+h1,h2,h3,h4,h5 {font-family:$font-stack;}
+h1,h2 {font-weight:700;}
+h3, h4 {font-weight:600;}
+p {
+	font-family: $font-stack;
+	font-size:$s0;
+	color: $color_primary;
+	font-weight:600;
+}
+
+.button {text-transform:uppercase;background:none;border:2px solid white; padding:15px 20px;color:white;min-width:185px;font-size:16px;i {font-size:13px;}
+	@media screen and (max-width:40em) {
+		min-width: 150px;
+	}
+}
+
+input#gform_submit_button_4, input#gform_submit_button_5 {border:2px solid $color_lightblue; background: $color_lightblue;color:white;font-family:$font-stack;font-size:16px; &:hover {background:white;color:$color_lightblue;}}
+.gform_wrapper .top_label .gfield_description {color:gray;}
+
+
+
+.title-bar {text-align: right; background:none;color:black; .menu-icon {background:black;color:black;} .title-bar-title {display:none;}}
+
+.off-canvas.position-right {
+	height:100%;
+	background:drakgray;
+	img {padding:1rem;}
+	li a {color:$color_primary;&:hover {color:white;}}
+		#menu-item-18:hover {
+			background: $color_lightblue;
+			color: white !important; 
+		}
+
+		#menu-item-17:hover {
+			background: $color_purple;
+			color: white !important; 
+		}
+
+		#menu-item-16:hover {
+			background: $color_orange;
+			color: white !important; 
+		}
+
+		#menu-item-15:hover {
+			background: $color_pukegreen;
+			color: white !important; 
+		}
+		#menu-item-25:hover {
+			background: $color_purple;
+			color: white !important; 
+		}
+		#menu-item-24:hover {
+			background: $color_purple;
+			color: white !important; 
+		}
+}
+
+.top-bar {
+	
+	max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    color:$color_primary;
+    background: white;
+
+
+
+    .top-bar-left {
+    	ul {background:white;}
+    	@media screen and (max-width:40em) {
+
+    	}
+
+	}
+    .top-bar-right {
+
+
+    ul {
+    	background:white;padding-top:1rem; 
+    	li {
+    		padding:0 4px;
+    		font-size:18px;
+
+    		a {border-bottom: 2px solid transparent;padding:10px 16px;font-weight:600;color:$color_primary;text-transform:uppercase;}
+    		&:last-child{
+    				padding-right:0;
+    				margin-right:0; 
+    				a {padding-right:0;margin-right:0}
+    			}
+
+    			@media screen and (min-width:40em) {
+		    	&:hover {
+		    			a {	color: #594759;
+					    border-bottom: solid 2px #594759;
+					    -moz-transition: all 0.35s ease-in-out;
+					    -webkit-transition: all 0.35s ease-in-out;
+					    -o-transition: all 0.35s ease-in-out;
+					    -ms-transition: all 0.35s ease-in-out;
+					    transition: all 0.35s ease-in-out;
+					    transform: translateZ(0);
+
+						}
+		    		}
+	    		}
+    		}
+    	}
+   		
+    	a#aveda-link:hover {
+		   border-bottom: 2px solid transparent;
+		}
+    	@media screen and (max-width:64.063em) {max-width:65%;ul li a {font-size:12px;padding:5px 5px;} #aveda-link {padding-right:0;}li {padding-top:1rem;} img {width:80px;}}
+    	@media screen and (min-width:40em) {padding-top:2rem;}
+        @media screen and (max-width:40em) {ul {float:right;img {max-width:35px;}} padding-top:0;text-align:center;max-width:100%;#aveda-link{display:none;}}
+
+    }
+
+    @media screen and (max-width: 40em) {
+    	img {display: none;}
+    }
+}
+
+
+
+#search {
+	display: none !important;
+	text-align: right;
+    padding: 1rem 3rem 0 0;
+    display: inline-block;
+    float: right;
+    i {color:#060606;}
+    @media screen and (max-width:480px) {
+    	display: none;
+    }
+
+}
+
+#lets-talk {
+	position:fixed;
+	right:0;
+	top:33%;
+	transform:  translateX(38%) translateY(-50%) rotate(-90deg);
+	background: $color_lightblue;
+	color:white;
+	padding: 0.5rem 2rem;
+	z-index: 999;
+        a {color:white;}
+	h2 {font-size: $s2;}
+	@media screen and (max-width:40em) {
+		display: none;
+	}
+}
+
+main {
+	.row {padding-top:1rem;}
+	color:white;
+	.row .columns {position:relative;padding-left:0.4375rem;padding-right:0.4375rem;}
+	.r1, .r2 {margin:0 auto !important;}
+	.m-down {display:none;}
+	@media screen and (max-width:64.063em) {
+	.r1, .r2 {margin:0 0.5rem !important;}
+		.m-down {display:block;}
+		.l-up {display:none;}
+	}
+	.r1 .large-4 {
+		padding-top: 5rem;
+		@media screen and (max-width:64.063em) {
+		height: 50vh !important;
+		padding-top: 1rem;
+		padding-bottom:0;
+		}
+	}
+	.r2 .large-4 {padding-bottom:5rem;
+		@media screen and (max-width:64.063em) {
+			padding-top: 1rem;
+			height: 50vh !important;
+			margin-bottom: 2rem;
+		}
+	}
+	h1, h2 {line-height:1em;}
+	.pattern {height:100%;width:100%;background:url(../images/pattern.png);}
+	.mobile-logo {padding:0rem 0 2rem 0;margin-top:-1rem;}
+	.about {
+		&:hover {cursor:pointer;}
+		position: relative;
+		height: 500px;
+		background:gray;
+		font-family: $font-stack;
+		background: url(../images/about-bg.jpg) no-repeat;
+		background-size: cover;
+		.container {
+			position:absolute;
+			bottom:0;
+			padding: 0 0 1rem 2rem;
+			h1 {font-size:$s3; @media screen and (max-width:40em) {font-size:33px;}}
+		}
+		.button:hover {color:$color_pukegreen;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height: 66vh;
+		}
+	}
+
+	.careers {
+		&:hover {cursor:pointer;}
+	    position: relative;
+    	background: url(../images/careers-bg.jpg) no-repeat;
+    	background-size: cover;
+    	height: 420px; 
+		.container {
+			text-align: right;
+			float:right;
+			position: absolute;
+			bottom:1rem;
+			right: 2rem;
+		}
+		.button:hover {color:$color_purple;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height:50vh;
+			margin-left: 20vw;
+			.container {
+				text-align: right;
+				right: 2rem;
+				left: inherit;
+			}
+		}
+	}
+	
+
+	.aveda {
+		&:hover {cursor:pointer;}
+		position: relative;
+		height: 420px;
+		background:gray;
+		font-family: $font-stack;
+		background: url(../images/aveda-bg.jpg) no-repeat;
+		background-size: cover;
+		background-position:center;
+		.container {
+			position:absolute;
+			bottom:1rem;
+			left: 2rem;
+			img {padding-bottom:1rem;}
+		}
+
+		.button:hover {color:$color_orange;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height: 50vh;
+			margin-right: 20vw;
+			.container {
+				position:absolute;
+				bottom:1rem;
+				left: 2rem;
+				right: inherit;
+				text-align: left;
+			}
+		}
+	}
+
+	.family {
+		&:hover {cursor:pointer;}
+	    position: relative;
+    	background: url(../images/family-bg.jpg) no-repeat;
+    	background-size: cover;
+    	height: 500px;
+    	.container {
+			text-align: right;
+			position: absolute;
+			bottom:1rem;
+			right: 2rem; 
+		}
+		.button:hover {color:$color_lightblue;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height: 66vh;
+		}
+	}
+
+}
+
+footer {
+	margin-top:8rem;
+	padding-top:6rem;
+	background:url(../images/footer-bg.png) no-repeat;
+	background-position:-10% 30px;
+	background-size:25%;
+	background-color:#eeeff0;
+	p {font-size:14px;font-weight:600;}
+	h4 {line-height:1em;font-size:14px;font-weight:700;}
+	a {color:$color_primary;}
+	.button {font-weight:600;border:none;background:$color_primary; &:hover {background:white;color:$color_primary;}}
+	.row {padding:2rem 0 6rem 0;}
+	.links {
+		ul {list-style:none;}
+		li {padding-bottom:5px;}
+		a {text-transform:uppercase;font-weight:700;font-size:12px;}
+	}
+	.social {min-width:185px;padding-top:0.5rem;list-style:none;text-align:center;margin:0 auto; li {display:inline-block;margin:0 6px;} i {font-size:25px;color:$color_primary;&:hover {color:lightgray;}}}
+
+	@media screen and (min-width:64.063em) {
+		.links {margin-left:-0.5rem;margin-right:4rem;}
+		#footer-logo {margin-top:25px;}
+	}
+
+	@media screen and (max-width: 64.063em) {
+		margin-top:4rem;
+		padding-top: 0;
+		background-position: 150px 100%;
+		background-size:70%;
+		.row {margin-left:4rem;padding:4rem 0 6rem 0;}
+		img {padding-bottom:2rem;}
+		.links {display:none;}
+		.social {text-align:left;}
+	}
+}
+
+
+@media screen and (max-width:40em) {
+#TB_ajaxContent {width:95% !important;margin:0 auto !important;}
+#TB_window {width:95% !important;left:0% !important;right: 0% !important; margin: auto !important; top:10% !important;
+ 	overflow: scroll !important;
+   -webkit-overflow-scrolling: touch !important;
+}
+}
+
+
+
+
+

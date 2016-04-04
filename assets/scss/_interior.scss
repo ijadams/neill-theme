@@ -1,0 +1,362 @@
+/* ABOUT PAGE STYLING */
+$color_lightblue: #00b3dc;
+$color_pukegreen: #a0b33d;
+$color_purple: #bc399d;
+$color_primary: #8b8d91;
+$color_orange: #d28139;
+$font-stack: "ff-din-web-pro",sans-serif;
+$s0: 16px;
+$s1: 20px;
+$s2: 25px;
+$s3m: 40px;
+$s3: 65px;
+
+
+.about-page {
+	#who-are-we {
+		&:hover {cursor: inherit;}
+		background: url(../images/about-page-bg.jpg) no-repeat;	
+		background-size:cover;
+		height: 500px;
+		.container {padding: 0 0 2rem 3rem;}
+	}
+
+	h3 {color:#8b8d91;}
+
+	.about-info {
+	    position: relative;
+		background:url(../images/about-anchor.png) no-repeat;
+		background-position: 280% 160%;
+		background-color: $color_lightblue;
+    	background-size: 350px;
+    	height: 500px; 
+    	p {color:white;font-size:$s0;}
+    	h2 {font-size:$s1;text-transform:uppercase;}
+		.container {
+			text-align: left;
+			padding: 6rem 2rem 2rem 2rem; 
+			.button {font-size:14px;}
+		}
+		.button:hover {color:$color_lightblue;background:white;}
+		@media screen and (max-width: 64.063em) {
+			margin-top:1rem;
+			background-position: 150% 50%;
+			.container {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				text-align: left;
+				padding: 0rem 0rem 1rem 2rem; 
+			}
+		}
+	}
+
+	.bottom {
+		.large-3.columns .container {
+			text-align: center;
+			margin: 0 auto;
+			background:#f0f0f0;
+			padding: 2rem;
+			@media screen and (min-width:64.063em) {
+				min-height: 580px;
+			}
+			@media screen and (max-width: 64em) {
+				min-height: 100%;
+				border-bottom:10px solid white;
+			}
+			h3, p {text-align: left;}
+			h3 {font-size:18px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.5em;}
+			p {font-size:15px;}
+		}
+	}
+}
+
+
+.aveda-page {
+	#aveda {
+		&:hover {cursor: inherit;}
+		color: white;
+		height: 500px;
+		background:gray;
+		font-family: $font-stack;
+		background: url(../images/aveda-page-bg.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		.container {
+			position:absolute;
+			bottom:0;
+			padding: 0 0 3rem 3rem;
+			h1 {font-size:$s3; @media screen and (max-width:40em) {font-size:$s3m;}}
+		}
+	}
+
+	h3 {color:#8b8d91;}
+
+	.aveda-info {
+	    position: relative;
+		background:url(../images/about-anchor.png) no-repeat;
+		background-position: 280% 160%;
+		background-color: $color_orange;
+    	background-size: 350px;
+    	height: 500px; 
+    	p {color:white;font-size:$s0;}
+    	h2 {font-size:$s1;text-transform:uppercase;}
+		.container {
+			text-align: left;
+			padding: 6rem 2rem 2rem 2rem; 
+			.button {font-size:14px;}
+		}
+		.button:hover {color:$color_orange;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height:100%;
+			margin-top:1rem;
+			background-position: 150% 50%;
+			.container {
+				position: relative;
+				text-align: left;
+				padding: 2rem; 
+			}
+		}
+	}
+
+	.bottom {
+		p {font-weight:400;}
+		h3 {font-weight:700;}
+		.medium-6.columns .container {
+			text-align: center;
+			margin: 0 auto;
+			background:#f0f0f0;
+			padding: 2rem;
+			@media screen and (min-width:64.063em) {
+				min-height: 480px;
+			}
+			@media screen and (max-width: 64.063em) {
+				min-height: 500px;
+				border-bottom: 10px solid white;
+			}
+			@media screen and (max-width: 40em) {
+				min-height: 300px;
+			}
+			h3, p {text-align: left;}
+			h3 {font-size:18px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.5em;}
+			p {font-size:15px;}
+		}
+
+		@media screen and (max-width:64.063em) {
+			&:last-child {padding-top: 0rem;}
+		}
+	}
+}
+
+
+
+
+.careers-page {
+	@media screen and (min-width:64.063em) {
+		.top .large-8.columns {padding-left:0 !important;}
+		.top .large-4.columns {padding-right:0 !important;}
+	}
+	#careers {
+		&:hover {cursor: inherit;}
+		color: white;
+		height: 550px;
+		background:gray;
+		font-family: $font-stack;
+		background: url(../images/careers-page-bg.jpg) no-repeat;
+		background-size: cover;
+
+		.container {
+			position:absolute;
+			bottom:0;
+			padding: 0 0 3rem 3rem;
+			h1 {font-size:$s3; @media screen and (max-width:40em) {font-size:$s3m;}}
+		}
+	}
+
+	h3 {color:#8b8d91;}
+
+	.careers-info {
+	    position: relative;
+		background:url(../images/about-anchor.png) no-repeat;
+		background-position: 280% 160%;
+		background-color: $color_pukegreen;
+    	background-size: 350px;
+    	height: 550px; 
+    	p {color:white;font-size:$s0;}
+    	h2 {font-size:$s1;text-transform:uppercase;}
+		.container {
+			text-align: left;
+			padding: 6rem 2rem 2rem 2rem; 
+			.button {font-size:14px;}
+		}
+		.button:hover {color:$color_pukegreen;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height:100%;
+			margin-top:1rem;
+			background-position: 150% 50%;
+			.container {
+				position: relative;
+				text-align: left;
+				padding: 2rem; 
+			}
+		}
+	}
+	
+	.middle {
+		background: url(../images/careers-middle-bg.jpg) no-repeat;
+		background-size: 100%;
+		background-color:#f0f0f0;
+		background-position:50% 100%;
+		margin-top:1rem;
+		margin-bottom: 6rem;
+		color:$color_primary;
+		height: 100%;
+		min-height: 400px;
+		.columns {
+			padding:2rem;
+			margin-top:1.5rem;
+		}
+		@media screen and (min-width:64.063em) {
+			background-size: 50%;
+			.columns {padding:2rem 4rem;}
+			.columns:first-child {margin-top:2.5rem;border-right:2px solid rgba(155, 155, 155, 0.4);}
+		}
+
+		h2 {color:$color_pukegreen;font-size:25px;}
+		.button {
+			background: $color_pukegreen;
+			color:white;
+			border:none;
+			font-weight: 600;
+			&:hover {color:$color_pukegreen;background:white;}
+		}
+	}
+
+	.bottom {
+		@media screen and (min-width: 64.063em) {
+			margin:0 10rem;
+		}
+		.large-4.columns .container {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			text-align: center;
+			margin: 0 auto;
+			background:#f0f0f0;
+			padding: 2rem;
+			height: 100%;
+			@media screen and (min-width:64.063em) {
+				min-height: 325px;
+			}
+			@media screen and (max-width: 64.063em) {
+				background:#f0f0f0;
+				border-bottom: 8px solid white;
+				min-height: 275px;
+			}
+			h3, p {text-align: center;}
+			h3 {font-size:25px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.5em;line-height:1em; .small {font-size:15px;}}
+			h3:first-child {color:white;}
+			p {font-size:15px;}
+		}
+		.columns:nth-child(1) {h3 {color:$color_lightblue;}}
+		.columns:nth-child(2) {h3 {color:$color_pukegreen;}}
+		.columns:nth-child(3) {h3, p {color:$color_purple;padding-top:2rem;}}
+	}
+	.bottom:last-child {
+		@media screen and (max-width: 64.063em) {padding-top:0;}
+		.columns:nth-child(1) {h3, p {color:$color_pukegreen;}}
+		.columns:nth-child(2) {h3, p {color:$color_orange;}}
+		.columns:nth-child(3) {h3, p {color:$color_lightblue;padding-top:0;}}
+	}
+}
+
+
+
+
+.family-page {
+	#family {
+		&:hover {cursor: inherit;}
+		color: white;
+		height: 500px;
+		background:gray;
+		font-family: $font-stack;
+		background: url(../images/family-page-bg.jpg) no-repeat;
+		background-size: cover;
+		.container {
+			position:absolute;
+			bottom:0;
+			padding: 0 0 2rem 3rem;
+			h1 {font-size:$s3; @media screen and (max-width:40em) {font-size:$s3m;}}
+		}
+	}
+
+	h3 {color:#8b8d91;font-size:17px;}
+
+	.family-info {
+	    position: relative;
+		background:url(../images/about-anchor.png) no-repeat;
+		background-position: 280% 160%;
+		background-color: $color_purple;
+    	background-size: 350px;
+    	height: 500px; 
+    	p {color:white;font-size:$s0;}
+    	h2 {font-size:$s1;text-transform:uppercase;}
+		.container {
+			text-align: left;
+			padding: 6rem 4rem 2rem 2rem; 
+			.button {font-size:14px;}
+		}
+		.button:hover {color:$color_orange;background:white;}
+		@media screen and (max-width: 64.063em) {
+			height:100%;
+			margin-top:1rem;
+			background-position: 150% 50%;
+			.container {
+				position: relative;
+				text-align: left;
+				padding: 2rem; 
+			}
+		}
+	}
+
+	.family-grid {
+			padding-top:4rem;
+		    max-width: 74rem;
+   			margin-left: auto;
+    		margin-right: auto;
+
+
+
+		.grid-item { background-size:cover !important; background-position:center !important;width: 30%;margin:0 auto;margin-bottom:2rem; overflow:hidden; text-align:center;p, h3 {text-align:left;}.container {padding:2rem;}
+			
+			img {margin-top:1rem;}
+			h3 {margin-top:1rem;}
+			a {text-decoration: underline;}
+			@media screen and (max-width:64.0435em) {
+				width:45%;
+				margin:2% 1%;
+
+			}
+			@media screen and (max-width:40em) {
+				width: 95%;
+				margin: 0 2.5%;
+				margin-bottom: 1rem;
+				.container {margin:1rem;}
+			}
+		}
+
+		.grid-item:nth-child(1) {background:url(../images/aveda-bg.png) no-repeat; a {color:$color_purple;}}
+		.grid-item:nth-child(2) {background:url(../images/ai-bg.jpg) no-repeat; a {color:$color_lightblue;}}
+		.grid-item:nth-child(3) {background:url(../images/aveda-education-bg.jpg) no-repeat; a {color:$color_orange;}}
+		.grid-item:nth-child(4) {background:url(../images/learn-bg.jpg) no-repeat; a {color:$color_pukegreen;}}
+		.grid-item:nth-child(5) {background:url(../images/sb-bg.jpg) no-repeat; a {color:$color_purple;}}
+		.grid-item:nth-child(6) {background:url(../images/salonbiz-bg.jpg) no-repeat; a {color:$color_lightblue;}}
+		.grid-item:nth-child(9) {background:url(../images/vomor-bg.jpg) no-repeat; a {color:$color_orange;}}
+		.grid-item:nth-child(8) {background:url(../images/rsession-bg.jpg) no-repeat; a {color:$color_pukegreen;}}
+		.grid-item:nth-child(7) {background:url(../images/relief-bg.jpg) no-repeat; a {color:$color_purple;}}
+		
+
+	}
+	footer {h4 {color:$color_primary;}}
+}
